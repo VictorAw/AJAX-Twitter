@@ -1,17 +1,1 @@
-<button type="submit" class="follow-toggle" data-user-id="3" data-follow-state="unfollowed"></button>
-
-
-
-
-
-
-
-
-
-
-
-<!-- <% if current_user.follows?(user) %>
-  <%= button_to "Unfollow", user_follow_url(user), method: :delete %>
-<% else %>
-  <%= button_to "Follow", user_follow_url(user), method: :post %>
-<% end %> -->
+<button type="submit" class="follow-toggle" data-user-id="<%= user.id %>" data-follow-state="unfollowed"></button>

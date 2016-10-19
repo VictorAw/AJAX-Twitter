@@ -57,12 +57,10 @@ class FollowToggle {
       url: `/users/${parseInt($(evt.target).data("user-id"))}/follow`,
       context: this,
       success(data) {
-        alert("Success!");
         this.followState = newFollowState;
         this.render();
       },
       error() {
-        alert("Failure!");
         this.followState = oldState;
         this.render();
       },
